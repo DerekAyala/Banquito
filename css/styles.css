@@ -71,15 +71,19 @@ span{color: var(--AzulOscuro);}
 .mision-vision{
   display: flex;
   justify-content: center;
+  margin-top: 4rem;
   gap: 2.5%;
 }
 .articulo{
   background-color: var(--gris);
   padding: 1.5rem;
   width: 55rem;
+  display: grid;
+  grid-template-rows: 0.6fr 1fr;
+  gap: 1.5rem;
 }
 .articulo__titulo{ text-align: center;}
-.articulo__texto{text-align: justify;margin: 0rem 0 1rem 0;}
+.articulo__texto{text-align: justify;margin: 0;}
 .articulo__img{
   width: 100%;
   max-height: 30rem;
@@ -121,7 +125,7 @@ span{color: var(--AzulOscuro);}
   justify-content: space-around;
   margin-top: 4rem;
 }
-.equipo__titulo,.servicios__titulo{
+.equipo__titulo,.servicios__titulo,.avisos__titulo,.mision-vision__titulo{
   color: var(--AzulOscuro);
   text-align: center;
 }
@@ -165,4 +169,31 @@ span{color: var(--AzulOscuro);}
 }
 .noticias__titulo{
   color: var(--AzulOscuro);
+}
+.noticia__titulo{
+  color: var(--Azul);
+}
+.noticia__titulo:hover{
+  text-decoration: underline;
+}
+.noticias__contenedor{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.noticia{
+  background-color: var(--gris);
+  padding: 1.5rem;
+  display: flex;
+  gap: 2rem;
+}
+.noticia__texto{
+  text-align: justify;
+}
+.noticia__img{
+  width: 35rem;
+  height: 20rem;
+}
+.avisos{
+  margin-top: 7rem;
 }

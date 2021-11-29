@@ -4,6 +4,7 @@
   --AzulOscuro: #0B3D83;
   --gris: #EBEAEA;
   --blanco: #fff;
+  --amarillo: #FEF5DC;
   --fuenteHeadings: 'Rambla', sans-serif;
   --fuenteParrafos: 'Sen', sans-serif;
 }
@@ -196,4 +197,28 @@ span{color: var(--AzulOscuro);}
 }
 .avisos{
   margin-top: 7rem;
+}
+.avisos__contenedor{
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.aviso{
+  background-color: var(--amarillo);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+.aviso__titulo{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aviso__texto{
+  text-align: justify;
+  margin: 0;
 }

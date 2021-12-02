@@ -35,40 +35,71 @@ span{color: var(--AzulOscuro);}
   max-width: 140rem;
   width: 95%;
 }
-.header{
+.header , .footer{
   background-color: var(--Azul);
 }
-.header__barra, .barra__enlaces , .barra__item{
+.footer{
+  margin-top: 7rem;
+}
+
+.header__barra , .barra__enlaces , .barra__item , .footer__barra{
   display: flex;
   gap: 1.5rem;
 }
+
+.footer__barra{
+  justify-content: space-between;
+  padding: 1rem 0;
+}
 .barra__item{align-items: center;}
-.barra__enlaces .barra__item:hover , .navegacion__enlace :hover{cursor: pointer;}
-.barra__enlaces .item__titulo:hover{color: var(--blanco);}
+.barra__enlaces .item__titulo:hover {cursor: pointer;color: var(--blanco);}
 .header__barra{
   justify-content: space-between;
   padding: 1rem 0;
 }
 .item__titulo{ color: var(--blanco); }
 .barra__enlaces .item__titulo{ color: var(--gris); }
+.bienvenida{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 4rem auto;
+  align-items: center;
+}
+.linea{
+  text-align: left;
+}
+.Mensaje{
+  text-align: center;
+}
+.visitas{
+  text-align: right;
+}
+.fijo{
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  margin-top: -1rem;
+  border: dashed double 1px var(--AzulNeutro);
+}
+.fijar-body {
+  overflow: hidden;
+}
+.body-scroll {
+  padding-top: 8.6rem;
+}
 .navegacion{
   background-color: var(--blanco);
-  border-radius: 1.5rem;
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
   padding: 1rem;
 }
-.navegacion__enlace{
-  align-items: center;
-  display: grid;
-  justify-content: center;
-}
-.enlace__titulo ,.articulo__titulo{
+
+.enlace__titulo ,.articulo__titulo , .Mensaje{
   color: var(--AzulOscuro);
 }
 .enlace__img{ display: flex; justify-content: center;}
-.enlace__titulo:hover{color: var(--Azul);}
+.enlace__titulo:hover,.navegacion__enlace:hover{color: var(--Azul);cursor: pointer;}
 .mision-vision{
   display: flex;
   justify-content: center;
@@ -206,6 +237,7 @@ span{color: var(--AzulOscuro);}
 }
 .aviso{
   background-color: var(--amarillo);
+  border: solid 5px var(--gris);
   padding: 1rem;
   border-radius: 1.5rem;
   display: grid;
